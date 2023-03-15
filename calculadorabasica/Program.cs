@@ -19,7 +19,6 @@ namespace calculadorabasica
                 Console.WriteLine("Digite 2 para subtrair");
                 Console.WriteLine("Digite 3 para multiplicar");
                 Console.WriteLine("Digita 4 para Dividir");
-                Console.WriteLine("Digite 5 para exibir a tabuada");
                 Console.WriteLine("Digite S para sair!");
                 string operacao = Console.ReadLine();
                 if (operacao == "S")
@@ -69,14 +68,14 @@ namespace calculadorabasica
                         Console.WriteLine("O segundo valor não pode ser zero tente novamente:");
                         Console.ReadLine();
                     }
-                    else if (valorb != 0)
+                    if (valorb != 0)
                     {
                         resultado = valora / valorb;
                         Console.WriteLine("O valor da operação é: " + resultado);
                     }
-                } 
-            
+                }
 
+                Console.ReadLine();
         } while (ehparacontinuar);
         }
     }
